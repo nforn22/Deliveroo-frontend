@@ -1,6 +1,32 @@
+/* Import icons */
+@import './assets/icons/style.css';
+
+/* Import custom fonts */
+@font-face {
+  font-family: 'StratosDeliverooWeb';
+  src: url('/fonts/StratosDeliverooWeb-SemiBold.woff2') format('woff2'),
+       url('/fonts/StratosDeliverooWeb-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/fonts/IBMPlexSans.woff2') format('woff2'),
+       url('/fonts/IBMPlexSans.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/fonts/IBMPlexSans-Bold.woff2') format('woff2'),
+       url('/fonts/IBMPlexSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* ===== GLOBAL ===== */
 body {
-  font-family: Arial, sans-serif;
+font-family: 'StratosDeliverooWeb', 'IBMPlexSans', Arial, sans-serif;
   background-color: #f6f6f6;
   margin: 0;
   padding: 0;

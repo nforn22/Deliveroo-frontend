@@ -40,9 +40,9 @@ function Cart({ cart, setCart }) {
           {cart.map((item) => (
             <li key={item.id} className="cart-item">
               <span>{item.title}</span>
-              <button onClick={() => handleRemove(item.id)}>-</button>
+              <button onClick={() => handleRemove(item.id)}><span className="icon-minus"></span></button>
               <span>{item.quantity}</span>
-              <button onClick={() => handleAdd(item.id)}>+</button>
+              <button onClick={() => handleAdd(item.id)}><span className="icon-plus"></span></button>
               <span>{(item.price * item.quantity).toFixed(2)} €</span>
             </li>
           ))}

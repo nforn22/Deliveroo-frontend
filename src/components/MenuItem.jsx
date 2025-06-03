@@ -37,7 +37,7 @@ function MenuItem({ meal, cart, setCart }) {
         {meal.description && <p>{meal.description}</p>}
         <span>{meal.price} €</span>
       </div>
-      <button onClick={handleAddToCart}>+</button>
+      <button onClick={handleAddToCart}><span className="icon-plus"></span></button>
     </div>
   );
 }
