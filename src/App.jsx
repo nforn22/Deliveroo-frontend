@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Oval } from "react-loader-spinner";
 import "./App.css";
 import Header from "./components/Header";
 import RestaurantInfos from "./components/RestaurantInfos";
@@ -29,7 +30,16 @@ function App() {
     <div className="App">
       <Header />
       {isLoading ? (
-        <span>En cours de chargement...</span>
+        <div className="loader-container">
+          <Oval
+            height={80}
+            width={80}
+            color="#00BFFF"
+            secondaryColor="#808080"
+            strokeWidth={2}
+            strokeWidthSecondary={2}
+          />
+        </div>
       ) : (
         <main>
           <RestaurantInfos restaurant={data.restaurant} />

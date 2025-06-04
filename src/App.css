@@ -307,3 +307,10 @@ header input[type="text"] {
     padding: 14px 6px;
   }
 }
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
